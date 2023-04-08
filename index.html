@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" async></script>
+  <title>GBDA Card Match</title>
+</head>
+<body>
+  <h1 class="page-title">GBDA Card Match</h1>
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+        <div class="game-info">
+            Fun Fact: <span id="fact">?</span>
+        </div>
+        <div class="game-info">
+            Matches: <span id="matches">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-ace.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-ace.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-ace.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-ace.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-3.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-3.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-3.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-3.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-4.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-4.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-4.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-4.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-5.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-5.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-5.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-5.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-6.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-6.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-6.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-6.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-7.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-7.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-7.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-7.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-8.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-8.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-8.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-8.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-9.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-9.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-9.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-9.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-10.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-10.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-10.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-10.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value jack" src="G-Jack.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value jack" src="B-Jack.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value jack" src="D-Jack.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value jack" src="A-Jack.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-Queen.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-Queen.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-Queen.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-Queen.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="G-King.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="B-King.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="D-King.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="gbda" src="gbda.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="A-King.png">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

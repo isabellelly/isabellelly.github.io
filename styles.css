@@ -1,0 +1,126 @@
+/*Typography*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    font-family: "Times New Roman";
+}
+
+body {
+  margin: 0;
+  background: Darkgreen;
+}
+
+.page-title {
+    color: #dddddd;
+    font-family: "Times New Roman", serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4em;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+  color: #dddddd;
+  font-size: 1.25em;
+}
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(13, auto);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
+  height: 117px;
+  width: 75px;
+}
+
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.gbda {
+    width: 75px;
+    height: 117px;
+}
+.card.visible .card-back {
+  transform: rotateY(-180deg); 
+}
+
+.card.visible .card-front {
+  transform: rotateY(0); 
+}
+
+.card-back {
+  transform: rotateY(0); 
+}
+
+.card-value {
+    width: 75px;
+    height: 117px;
+    position: relative;
+    transition: transform 100ms ease-in-out;
+}
+
+.card-front:hover .card-value {
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.overlay-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ddd;
+  font-family: "Times New Roman", serif;
+  transition: background-color 500ms, font-size 500ms;
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 10em;
+  }
+}
