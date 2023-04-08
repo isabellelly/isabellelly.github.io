@@ -69,7 +69,7 @@ class MixOrMatch {
         this.totalMatches++;
         this.counter.innerText = this.totalMatches;
     
-        if (this.getCardType(card1) === "e.png") {
+        if (this.getCardType(card1) === "1.png") {
             if (this.ace === false) {
                 this.fact = "1 minor completed in computing";
                 this.facter.innerText = this.fact;
